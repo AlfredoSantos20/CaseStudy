@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-title>Contact Details</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" color="light" defaultHref="/home">
+      </ion-back-button>
+
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+  <ion-card-title>Contact Information</ion-card-title>
+<ion-card-subtitle>You can use the information below to contact us.</ion-card-subtitle>
+
+<ion-card-content>
+
+<ul>
+
+<li><ion-icon color ="danger" name="location-outline"></ion-icon> Hoca Paşa, Taya Hatun Sk Turkey</li>
+<li> <ion-icon color ="danger"  name="phone-portrait-outline"></ion-icon>  +63 9235784212</li>
+<li><ion-icon color="danger" name="call-outline"></ion-icon>  +63 9383899041</li>
+<li><ion-icon color="danger" name="mail-outline"></ion-icon>  turkishantravels@gmail.com</li>
+
+</ul>
+</ion-card-content>
+</ion-card>
+
+      <ion-card>
+        <ion-card-title>Your Contact Information</ion-card-title>
+    <ion-card-subtitle>Enter your concerns.</ion-card-subtitle>
+     <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">Name: </ion-label>
+        <ion-input [clearInput]="true" ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Email: </ion-label>
+        <ion-input [clearInput]="true" ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Phone: </ion-label>
+        <ion-input [clearInput]="true" ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked"> Message:</ion-label>
+        <ion-textarea></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-checkbox color="primary"></ion-checkbox>
+       I hereby certify that the information i have entered herein are true and correct.
+      </ion-item>
+
+      <ion-button  defaultHref="home"  class="btn" fill="outline" color="danger" >Send
+
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>
+
+
+<!--FOOTER -->
+
+<ion-footer class="copyright">
+
+  <ul>
+
+ <li></li>
+ <li></li>
+ <li>© 2022 - 2023 Turkishan Travels, all rights reserved.</li>
+  </ul>
+ </ion-footer>

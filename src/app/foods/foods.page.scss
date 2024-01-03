@@ -1,0 +1,76 @@
+ion-toolbar{
+   
+    --background: linear-gradient(to bottom right,#ff5f6d  , #ffc371);;
+     color: white;
+      }
+      ion-title{
+       color: white;
+       font-family: cursive;
+       
+      }
+      ion-subtitle{
+
+        text-align: center;
+      }
+     ion-card-title{
+      text-align: center;
+     }
+    li{
+      list-style-type: none;
+    }
+    .btn{
+       
+  
+      --background-hover: #9ce0be;
+      --background-activated: #88f4be;
+      --background-focused: #88f4be;
+      
+      color:black;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+      position: relative;
+      overflow: hidden;
+    
+     
+    
+      user-select: none;
+    
+      width: auto;
+     margin-bottom: 5px;
+     
+   }
+   .arrowicon{
+      margin-left: 10px;
+   }
+  
+  
+   ion-footer{
+    background-image: linear-gradient(to right,#ff5f6d  , #ffc371);;
+  color:white;
+  padding:3px;
+  position: absolute;
+  bottom:0;
+  width:100%;
+  text-transform: capitalize;
+  text-align:center;
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);
+  font-size: 10px;
+  
+  }
+  .back{
+    margin-bottom: 50px;
+  }
+  .pricetag{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  .scrollTop{
+    margin-bottom: 50px;
+  }
+  .scrollBottom{
+    margin-top: 160px;
+  }

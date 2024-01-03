@@ -1,0 +1,133 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-title>Inquire Details</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" color="light" defaultHref="/home">
+      </ion-back-button>
+  
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-card>
+    <ion-card-title>Trip Details</ion-card-title>
+
+ <ion-card-content>
+  <ion-item>
+    <ion-label position="stacked">Enter your Email: </ion-label>
+    <ion-input [clearInput]="true" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Enter your Name: </ion-label>
+    <ion-input [clearInput]="true" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Enter your Number: </ion-label>
+    <ion-input [clearInput]="true" ></ion-input>
+  </ion-item>
+<!--ION SELECT FOR SELECTING USERS DESIRED-->
+  <ion-item>
+   <ion-label>Choose your Desired Destination</ion-label>
+  <ion-select aria-placeholder="Select One">
+    <ion-select-option value="f1">Hagia sophia</ion-select-option>
+    <ion-select-option value="f2">Goreme Fairy Chimneys</ion-select-option>
+    <ion-select-option value="f3">Library of Celsus</ion-select-option>
+    <ion-select-option value="f4">Blue Mosque</ion-select-option>
+    <ion-select-option value="f5">Oludeniz</ion-select-option>
+    <ion-select-option value="f6">Mount Nemrut</ion-select-option>
+    <ion-select-option value="f7">Bodrum Castle</ion-select-option>
+    <ion-select-option value="f8">Pamukkale</ion-select-option>
+    <ion-select-option value="f9">Patara Beach</ion-select-option>
+    <ion-select-option value="f10">Aspendos Theatre</ion-select-option>
+  </ion-select>
+  </ion-item>
+<!--ION SELECT FOR SELECTING USERS DESIRED-->
+  <ion-item>
+    <ion-label>Choose your Desired Hotel</ion-label>
+  <ion-select aria-placeholder="Select One">
+    <ion-select-option value="f1">Divan Cave Hotel</ion-select-option>
+    <ion-select-option value="f2">Romance Istanbul Hotel</ion-select-option>
+    <ion-select-option value="f3">Conrad Istanbul Bosphorus</ion-select-option>
+    <ion-select-option value="f4">Concorde De Luxe Resort</ion-select-option>
+    <ion-select-option value="f5">Hotel Amira Istanbul</ion-select-option>
+  </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">How many Days? </ion-label>
+    <ion-input [clearInput]="true" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Date</ion-label>
+    <ion-datetime-button datetime="datetime"></ion-datetime-button>
+ 
+    <!-- keep this true so that the Button will not be hidden--> 
+   <ion-modal [keepContentsMounted]="true">
+     <ng-template>
+       <ion-datetime id="datetime"></ion-datetime>
+     </ng-template>
+   </ion-modal>
+   
+  </ion-item>
+</ion-card-content>
+</ion-card>
+
+      <ion-card>
+        <ion-card-title>Family Information</ion-card-title>
+    
+     <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">Your Country: </ion-label>
+        <ion-input [clearInput]="true" ></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label position="stacked">Adult Number: </ion-label>
+        <ion-input [clearInput]="true" ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Children Number (0-5 Years): </ion-label>
+        <ion-input [clearInput]="true" ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Children Number (6-11 Years): </ion-label>
+        <ion-input [clearInput]="true" ></ion-input>
+      </ion-item>
+   
+      <ion-item>
+        <ion-label position="stacked">Your Message and Request: </ion-label>
+        <ion-textarea></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-checkbox color="primary"></ion-checkbox> 
+       I hereby certify that the information i have entered herein are true and correct.
+      </ion-item> 
+    
+      <ion-button defaultHref="home"  class="btn" fill="outline" color="danger" >Send Request
+        <ion-icon class="arrowicon" name="arrow-forward-outline"></ion-icon>
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+<!--FOOTER -->
+
+<ion-footer class="copyright">
+
+  <ul>
+ 
+ <li></li>
+ <li></li>
+ <li>© 2022 - 2023 Turkishan Travels, all rights reserved.</li>
+  </ul>
+ </ion-footer>

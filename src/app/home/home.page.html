@@ -1,0 +1,478 @@
+<ion-header>
+  <ion-toolbar>
+  
+    <ion-title>
+      Turkishan Travels
+     </ion-title>
+     <ion-icon class="searchIcon"  routerLink="/search" slot="end" size="large" name="search-outline"></ion-icon>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+  
+</ion-header>
+
+  <ion-content [fullscreen]="true">
+
+    
+  
+
+<!-- AUTOPLAY SLIDE IMAGES-->
+<ion-item>
+  <ion-slides  pager ='true' [options] ='slideOpts'>
+ 
+    <ion-slide>
+      <ion-card  class = "card-carousel">
+        
+        <img routerLink="/istanbul"  class="img" src="../../assets/icon/hagiasophia.jpg">    <div class="text">Hagia Sophia</div>
+     
+        
+      </ion-card>
+     
+    </ion-slide>
+
+    <ion-slide>
+     <ion-card  class = "card-carousel">
+      <img routerLink="/antalya" class="img" src="../../assets/icon/chiney.jpg"> <div class="text">Goreme Fairy Chimneys</div>
+      
+     </ion-card>
+        
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card  class = "card-carousel">
+        <img  routerLink="/celsus"  class="img"  src="../../assets/icon/lib.jpg">  <div class="text">Library of Celsus</div>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card  class = "card-carousel">
+        <img routerLink="/mosque" class="img" src="../../assets/icon/blue.jpg"> <div class="text">Blue Mosque</div> 
+      </ion-card>
+    </ion-slide>
+
+ 
+
+  <ion-slide>
+    <ion-card  class = "card-carousel">
+      <img routerLink="/oludeniz" class="img" src="../../assets/icon/oludeniz.jpg"> <div class="text">Oludeniz</div> 
+    </ion-card>
+  </ion-slide>
+
+
+<ion-slide>
+  <ion-card  class = "card-carousel">
+    <img routerLink="/mount" class="img" src="../../assets/icon/nemrut.jpg"> <div class="text"> Mount Nemrut </div> 
+  </ion-card>
+</ion-slide>
+
+<ion-slide>
+  <ion-card  class = "card-carousel">
+    <img routerLink="/bodrum" class="img" src="../../assets/icon/bodrum.jpg"> <div class="text"> Bodrum Castle </div> 
+  </ion-card>
+</ion-slide>
+
+<ion-slide>
+  <ion-card  class = "card-carousel">
+    <img routerLink="/pamukkale" class="img" src="../../assets/icon/Pamukkale1.jpg"> <div class="text"> Pamukkale </div> 
+  </ion-card>
+</ion-slide>
+
+<ion-slide>
+  <ion-card  class = "card-carousel">
+    <img routerLink="/beach" class="img" src="../../assets/icon/patara1.jpg"> <div class="text"> Patara Beach </div> 
+  </ion-card>
+</ion-slide>
+
+<ion-slide>
+  <ion-card  class = "card-carousel">
+    <img class="img" routerLink="/aspendos" src="../../assets/icon/Aspendos.jpg"> <div class="text"> Aspendos Theatre </div> 
+  </ion-card>
+</ion-slide>
+
+
+</ion-slides>
+</ion-item>
+<ion-item>
+  <!--SEGTMENT BUTTONS FOR FLIGHT, FOODS, AND HOTELS DETAILS-->
+
+  <ion-segment color="dark" value="custom">
+  <ion-segment-button routerLink="/inquire" value="custom"><ion-icon name="airplane-outline"></ion-icon>
+    <ion-label>Flight</ion-label>
+  </ion-segment-button>
+  <ion-segment-button routerLink="/foods" value="segment"><ion-icon name="fast-food-outline"></ion-icon>
+    <ion-label>Foods</ion-label>
+  </ion-segment-button>
+  <ion-segment-button routerLink="/hotels" value="buttons"><ion-icon name="bed-outline"></ion-icon>
+    <ion-label>Hotels</ion-label>
+  </ion-segment-button>
+</ion-segment>
+
+  
+</ion-item>
+
+
+    <ion-item>
+
+      <!--CONTENT IN FRONT PAGE-->
+     
+      <ion-card>
+        
+        <ion-card-header>
+          <ion-card-title>Do You Crave Travelling for a
+          <p> Memorable Trip with Family & Friends?</p>
+        </ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content class="cardtext">
+          We are Here!!! Turkishan Travels is a professional travel agency specializing in travel to Turkey. We provide travel services from start to finish for all of your touring needs. We excel in creating tours for our guests, so that you may experience the rich history and breathtaking landscapes of destinations. Our mission is to provide our valued guests, high quality services at reasonable prices.
+        </ion-card-content>
+      
+     
+      </ion-card>
+    </ion-item>
+    
+        
+
+      <ion-item>
+        
+        
+    <ion-card>
+     
+      
+    <img src="../../assets/icon/hagiasophia1.jpg">
+    <ion-card-header>
+      <ion-card-title>Hagia Sophia </ion-card-title>
+      
+     
+    </ion-card-header>
+  
+    <ion-card-content class="cardtext">
+     Located in Istanbul, the Hagia Sophia was originally a basilica constructed for the Eastern Roman Emperor Justinian I in the sixth century. A masterwork of Roman engineering, the massive dome (31 meters or 102 feet in diameter) covers what was for over 1000 years the largest enclosed space in the world. The church was looted by the fourth Crusaders in 1204, and became a mosque in the 15th century when The Ottomans conquered the city. The Hagia Sophia was converted into a museum in 1935 and is now one of the top attractions in Turkey.
+    </ion-card-content>
+    
+    <!--BTN FOR SENDING REQUEST-->
+    <ion-button routerLink="/istanbul"  class="btn" fill="outline" color="dark" >Send Request
+      <ion-icon class="arrowicon" name="arrow-forward-outline"></ion-icon>
+    </ion-button>
+    
+  
+  </ion-card>
+ 
+    </ion-item>
+
+        <ion-item>
+     
+    <ion-card>
+    <img class="contentimg" src="../../assets/icon/chiney1.jpg">
+    <ion-card-header>
+      <ion-card-title>Goreme Fairy Chimneys</ion-card-title>
+     
+    </ion-card-header>
+  
+    <ion-card-content>
+      One of the best places to see these strange formations is the town of Göreme, which is located among a large number of tuff cones, termed fairy chimneys. The fairy chimneys have been formed as the result of wind and water erosion of two different volcanic layers: A thick layer of tuff (consolidated volcanic ash) covered by a thin layer of basalt that is more resistant to erosion. Due to the ease of carving into the tuff, many of the fairy chimneys at Cappadocia have been hollowed out over the centuries to create houses, churches and storage facilities.    
+    </ion-card-content>
+
+    <!--BTN FOR SENDING REQUEST-->
+    <ion-button routerLink="/antalya"  class="btn" fill="outline" color="dark" >Send Request
+      <ion-icon class="arrowicon" name="arrow-forward-outline"></ion-icon>
+    </ion-button>
+
+  </ion-card>
+    
+        </ion-item>
+
+        <ion-item>
+     
+          <ion-card>
+          <img class="contentimg" src="../../assets/icon/lib1.jpg">
+          <ion-card-header>
+            <ion-card-title>Library of Celsus</ion-card-title>
+            
+          </ion-card-header>
+        
+          <ion-card-content class="cardtext">
+            The ruins of Ephesus are a popular tourist attraction on the west coast. The city of Ephesus was once famed for the Temple of Artemis, one of the seven wonders of the ancient world, which was destroyed by a mob led by the archbishop of Constantinople in 401 AD. Some of the structures can still be seen however including the Great Theater and the Library of Celsus. The library was built around 125 AD to store 12,000 scrolls and to serve as a monumental tomb for Celsus, the governor of Asia. The façade was carefully reconstructed in the 1970s to its present splendid state from the original pieces.
+
+         
+          </ion-card-content>
+
+          <!--BTN FOR SENDING REQUEST-->
+          <ion-button  routerLink="/celsus"  class="btn" fill="outline" color="dark" >Send Request
+            <ion-icon class="arrowicon" name="arrow-forward-outline"></ion-icon>
+          </ion-button>
+
+        </ion-card>
+          
+              </ion-item>
+
+
+              <ion-item>
+     
+                <ion-card>
+                <img class="contentimg" src="../../assets/icon/bul.jpg">
+                <ion-card-header>
+                  <ion-card-title>Blue Mosque</ion-card-title>
+                
+                </ion-card-header>
+              
+                <ion-card-content class="cardtext">
+                  With its six minarets and sweeping architecture the Sultan Ahmed or Blue Mosque in Istanbul impresses from the outside. While still used as a mosque, the Blue Mosque has also become one of the most popular tourist attractions in Istanbul. It was built between 1609 and 1616 and like many other mosques contains the tomb of the founder. Inside the mosque, the high ceiling is lined with the 20,000 blue tiles with different patterns that give the mosque its popular name
+                </ion-card-content>
+
+                <!--BTN FOR SENDING REQUEST-->
+                <ion-button routerLink="/mosque"  class="btn" fill="outline" color="dark" >Send Request
+                  <ion-icon class="arrowicon" name="arrow-forward-outline"></ion-icon>
+                </ion-button>
+
+              </ion-card>
+                
+                    </ion-item>
+
+                    <ion-item>
+     
+                      <ion-card>
+                      <img class="contentimg" src="../../assets/icon/oludeniz1.jpg">
+                      <ion-card-header>
+                        <ion-card-title>Oludeniz</ion-card-title>
+                      
+                      </ion-card-header>
+                    
+                      <ion-card-content class="cardtext">
+                        Ölüdeniz, when translated means “dead sea” and it is so-called because of the salty calm waters of its hidden lagoon. The first settlers in the bay are likely to have been Christians who set up churches in the area during the time of St. Paul, around 50 AD. There was once a number of churches in the region, but earthquakes, sea bandits and mass development sadly left most of the churches lying in ruins or destroyed. The only remains that can be seen are that of St. Demetrius, its ruins now the central feature of Ecclesia Hotel, a modern boutique hotel connected to Buzz Bar, a contemporary beachside bar and restaurant right in the centre of Oludeniz seafront.
+                      </ion-card-content>
+
+                      <!--BTN FOR SENDING REQUEST-->
+                      <ion-button routerLink="/oludeniz"  class="btn" fill="outline" color="dark" >Send Request
+                        <ion-icon class="arrowicon" name="arrow-forward-outline"></ion-icon>
+                      </ion-button>
+
+                    </ion-card>
+                      
+                          </ion-item>
+
+                          <ion-item>
+     
+                            <ion-card>
+                            <img class="contentimg" src="../../assets/icon/nemrut1.jpg">
+                            <ion-card-header>
+                              <ion-card-title>Mount Nemrut</ion-card-title>
+                            
+                            </ion-card-header>
+                          
+                            <ion-card-content class="cardtext">
+                              Nemrut is a 2,134 meter (7,001 ft) high mountain in southeastern Turkey, near the city of Adiyaman. In 62 BC, King Antiochus I Theos of Commagene built a tomb-sanctuary flanked by huge statues of himself, two lions, two eagles and various Greek, and Persian gods on the mountain top. Since their construction, the heads have toppled from the bodies and lay scattered throughout the site. The summit of Mount Nemrut provides a great view of the surrounding mountains. The main attraction is to watch the sunrise from the eastern terrace which give the bodyless heads a beautiful orange hue and adds to the sense of mystery of the place.
+                            </ion-card-content>
+
+                            <!--BTN FOR SENDING REQUEST-->
+                            <ion-button routerLink="/mount"  class="btn" fill="outline" color="dark" >Send Request
+                              <ion-icon class="arrowicon" name="arrow-forward-outline"></ion-icon>
+                            </ion-button>
+
+                          </ion-card>
+     
+                                </ion-item>
+
+                                <ion-item>
+                                  <ion-card>
+                                  <img src="../../assets/icon/bodrum1.jpg">
+                                  <ion-card-header>
+                                    <ion-card-title>Bodrum Castle</ion-card-title>
+                                    
+                                   
+                                  </ion-card-header>
+                                
+                                  <ion-card-content class="cardtext">
+                                    Located in the city of Bodrum in southwest Turkey, Bodrum Castle was built by the Crusaders in the 15th century as the Castle of St. Peter. It is one of the world’s best preserved monuments dating back to medieval times. The castle now operates as a museum, with the focus on the Museum of Underwater Archaeology. It overlooks the internal marina of Bodrum filled with millions of dollars worth of sailing crafts.
+                                  </ion-card-content>
+                                  
+                                  <!--BTN FOR SENDING REQUEST-->
+                                  <ion-button routerLink="/bodrum"  class="btn" fill="outline" color="dark" >Send Request
+                                    <ion-icon class="arrowicon" name="arrow-forward-outline"></ion-icon>
+                                  </ion-button>
+                                  
+                                
+                                </ion-card>
+                               
+                                  </ion-item>
+
+                                  <ion-item>
+                                    <ion-card>
+                                    <img src="../../assets/icon/Pamukkale.jpg">
+                                    <ion-card-header>
+                                      <ion-card-title>Pamukkale</ion-card-title>
+                                      
+                                     
+                                    </ion-card-header>
+                                  
+                                    <ion-card-content class="cardtext">
+                                      Pamukkale, meaning “cotton castle” in Turkish, is an unreal landscape in western Turkey, famous for its white terraces. The terraces are made of travertine, a sedimentary rock deposited by water with a very high mineral content from the hot springs. People have bathed in its pools for thousands of years. The ancient Greek city of Hierapolis was built on top of the hot springs by the kings of Pergamon. The ruins of the baths, temples and other Greek monuments can be seen at the site.
+                                    </ion-card-content>
+                                    
+                                    <!--BTN FOR SENDING REQUEST-->
+                                    <ion-button routerLink="/pamukkale"  class="btn" fill="outline" color="dark" >Send Request
+                                      <ion-icon class="arrowicon" name="arrow-forward-outline"></ion-icon>
+                                    </ion-button>
+                                    
+                                  
+                                  </ion-card>
+                                 
+                                    </ion-item>
+                                  
+
+                                    <ion-item>
+                                      <ion-card>
+                                      <img src="../../assets/icon/patara.jpg">
+                                      <ion-card-header>
+                                        <ion-card-title>Patara Beach</ion-card-title>
+                                        
+                                       
+                                      </ion-card-header>
+                                    
+                                      <ion-card-content class="cardtext">
+                                        At 14 kilometers (9 miles), Patara is one of the longest stretches of sandy beach found anywhere in the Mediterranean. The beach is backed only by ancient Lycian and Roman ruins and swooping dunes with no buildings visible except of a small café. Patara Beach is also the breeding ground of the endangered Loggerhead turtle. The nearby village of Patara was the birthplace of St Nicholas, the 4th-century Byzantine bishop who later passed into legend as Santa Claus
+                                      </ion-card-content>
+                                      
+                                      <!--BTN FOR SENDING REQUEST-->
+                                      <ion-button routerLink="/beach"  class="btn" fill="outline" color="dark" >Send Request
+                                        <ion-icon class="arrowicon" name="arrow-forward-outline"></ion-icon>
+                                      </ion-button>
+                                      
+                                    
+                                    </ion-card>
+                                   
+                                      </ion-item>
+
+                                      <ion-item>
+                                          <!--TO SCROLL TO TOP-->
+     
+                                      <ion-fab  class="scrollTop" horizontal="end" vertical="top">
+                                        <ion-fab-button color="dark" (click)="scrollToTop()">
+                                          <ion-icon name="arrow-up-outline"></ion-icon>
+                                        </ion-fab-button>
+                                      </ion-fab>
+
+                                        <ion-card>
+                                        <img src="../../assets/icon/Aspendos1.jpg">
+                                        <ion-card-header>
+                                          <ion-card-title>Aspendos Theatre</ion-card-title>
+                                          
+                                         
+                                        </ion-card-header>
+                                      
+                                        <ion-card-content class="cardtext">
+                                          Aspendos boasts one of the best preserved ancient theatres of antiquity. The theatre of Aspendos was built in 155 AD during the rule of the Roman Emperor Marcus Aurelius and could seat between 15,000 and 20,000 spectators. Because the stage area was later used as a caravanserai (a roadside inn) in Seljuk times, it was continuously repaired and maintained. Thus, the Aspendos Theatre has been able to survive to this days without losing almost any of its original qualities.
+                                        </ion-card-content>
+                                        
+                                        <!--BTN FOR SENDING REQUEST-->
+                                        <ion-button routerLink="/aspendos"  class="btn" fill="outline" color="dark" >Send Request
+                                          <ion-icon class="arrowicon" name="arrow-forward-outline"></ion-icon>
+                                        </ion-button>
+                                        
+                                      
+                                      </ion-card>
+                                     
+                                        </ion-item>
+                                  
+                                        <ion-item>
+
+                                          <ion-card>
+        
+                                            <ion-card-header>
+                                              <ion-card-title class="btmtitle">What Our Guest Say About Us?
+                                                  <ion-icon size="medium" color="success" name="chatbox-ellipses-outline" horizontal="end"></ion-icon></ion-card-title>
+                                                 
+                                           
+                                            <ion-card-subtitle>
+                                             Turkishan Travels  
+                                            
+                                            </ion-card-subtitle>
+                                            </ion-card-header>
+                                          
+                                            <ion-card-content>
+                                             
+                                              <ion-slides  pager ='true' [options] ='slideOpts'>
+
+                                                <ion-slide>
+                                                  <ion-card  class = "card-carousel">
+                                                    
+                                                    <img  class="img" src="../../assets/icon/2.png">    
+                                                 
+                                                  </ion-card>
+                                                 
+                                                </ion-slide>
+                                            
+                                                <ion-slide>
+                                                 <ion-card  class = "card-carousel">
+                                                  <img  class="img" src="../../assets/icon/3.png"> 
+                                                  
+                                                 </ion-card>
+                                                    
+                                                </ion-slide>
+
+                                                <ion-slide>
+                                                  <ion-card  class = "card-carousel">
+                                                   <img  class="img" src="../../assets/icon/4.png"> 
+                                                   
+                                                  </ion-card>
+                                                     
+                                                 </ion-slide>
+
+                                                 <ion-slide>
+                                                  <ion-card  class = "card-carousel">
+                                                   <img  class="img" src="../../assets/icon/es.png"> 
+                                                   
+                                                  </ion-card>
+                                                     
+                                                 </ion-slide>
+                                                                      
+                                                  </ion-slides>
+                                            </ion-card-content>
+                                          
+                                         
+                                          </ion-card>
+                                       
+
+                                        </ion-item>
+
+      
+            
+      
+      
+        <!--FAB BUTTONS FOR SOCIAL MEDIA CONTACTS-->
+
+        <ion-fab  class="fabbutton" vertical ="bottom" horizontal="end" slot="fixed">
+
+          <ion-fab-button size="small" color="dark"><ion-icon name="layers-outline"></ion-icon></ion-fab-button>
+
+      
+
+        <ion-fab-list side="top">
+
+          <ion-fab-button href="https://twitter.com/home?lang=en" color="secondary"><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+          <ion-fab-button href="https://www.facebook.com/" color="primary"><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+          <ion-fab-button  href="https://www.youtube.com/" color="danger"><ion-icon name="logo-youtube"></ion-icon></ion-fab-button>
+          <ion-fab-button href="https://www.whatsapp.com/" color="success"><ion-icon name="logo-whatsapp"></ion-icon></ion-fab-button>
+          
+        </ion-fab-list>
+
+
+      </ion-fab>
+
+
+    
+</ion-content>
+
+<!--FOOTER -->
+
+<ion-footer class="copyright">
+
+ <ul>
+
+<li></li>
+<li></li>
+<li>© 2022 - 2023 Turkishan Travels, all rights reserved.</li>
+ </ul>
+</ion-footer>
+

@@ -1,0 +1,79 @@
+
+ion-toolbar{
+   
+    --background: linear-gradient(to bottom right,#ff5f6d  , #ffc371);;
+    color: white;
+      }
+      //THIS IS FOR MODERN SIDEMENU WITH USER PIC
+      .menu-header-bg{
+     
+      height: 180px;
+      width: 350;
+      background: linear-gradient(to bottom right,#ff5f6d  , #ffc371);;
+      box-shadow: 0px 1px 10px rgba(98, 140, 255, 0.5);
+      transform: rotate(-15deg);
+      border-radius: 10px 10px 10px 50px;
+      margin-left: -18px;
+      margin-top: -50px;
+      margin-bottom: 60px;
+    }
+     .header-content{
+
+      position: absolute;
+      top:30px;
+      left: 15px;
+      display: flex;
+      align-items:center;
+     }
+     img{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 7px solid  #ffc371
+     }
+     h2{
+      font-weight: 300;
+      color: white;
+      font-family: lato;
+     }
+     p{
+      font-family: lato;
+      font-size: 12px;
+      color: white;
+      font-weight: 100;
+      letter-spacing: 0.4px;
+     } //HANGGANG DITO PO ANG CODES NG MODERN SIDEMENU
+      .btn{
+
+        color:black;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        position: relative;
+        overflow: hidden;
+
+        user-select: none;
+      
+        width: auto;
+       margin-bottom: 5px;
+}
+    .logout{
+      margin-left: 10px;
+      font-family: lato;
+    }
+    .aboutus{
+     
+      font-family: lato;
+    }
+    
+     .label{
+      font-family: cursive;
+     }
+//ONCE SIDEMENU IS OPENED IT WILL COLOR THE RIGHT SIDE
+     ion-menu::part(backdrop) {
+      background-color: rgba(255, 153, 0, 0.5);
+    }
+    
+   

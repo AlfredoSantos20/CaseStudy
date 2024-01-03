@@ -1,0 +1,52 @@
+ion-slides{
+    height: 100%;
+    ion-slide{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-items: initial;
+        justify-content: left;
+        ion-row{
+             
+           
+            flex-direction: column;
+            ion-img{
+                height: 10vh;
+                width: 10vh;
+               
+               
+            }
+            ion-label, p{
+                font-size: 1.2em;
+                font-family: fantasy;  
+                color: white;      
+            }
+            
+        }
+        .logoLabel{
+            margin-top: 2vh;
+        }
+        .logo{
+            margin: 2vh 0 0 2vh;
+        }
+        .btns{
+            transform: translateY(70vh);
+            ion-button{
+                width: 70%;
+                margin: auto;
+                margin-bottom: 3vh;
+            }
+            
+        }
+    }
+}
+.btnU{
+    --background: white;
+    --color: orange;
+    
+}
+.btnI{
+ 
+    --color: white;
+    --background: linear-gradient(to bottom right,#ff5f6d  , #ffc371);
+}

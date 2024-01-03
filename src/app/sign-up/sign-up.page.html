@@ -1,0 +1,96 @@
+<ion-content [fullscreen]="true">
+
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+  
+        <ion-back-button mode="md" color="light" defaultHref="/welcome">
+  
+        </ion-back-button>
+  
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <!--for our logo-->
+  <ion-row class="logo">
+    <ion-col>
+    <ion-img src="assets/icon/turkishan.png"></ion-img>
+    <ion-label>
+      Plan your dream holiday
+      
+      <p class="ion-text-left ">With us!</p>
+    </ion-label>
+  </ion-col>
+  </ion-row>
+  </ion-content>
+  
+  <ion-footer>
+  <ion-list lines="full">
+    <ion-list-header class="ion-margin">
+      <ion-label>
+       New
+       <p> <ion-text color="dark">Account</ion-text></p> 
+      </ion-label>
+    </ion-list-header>
+  <!--for name  w/ validator-->
+  <ion-item-group class="ion-margin-horizontal">
+    <form [formGroup]="form">
+      <div class="ion-margin-vertical">
+        <ion-item>
+          
+          <ion-icon name="person" slot="start"></ion-icon>
+        <ion-input formControlName="name" type="name" placeholder="Username"></ion-input>
+        </ion-item>
+        <ion-text class="error" color="danger" *ngIf="!form.get('email').valid && form.get('name').touched">
+          <ion-text *ngIf="form.get('name').hasError('required')">
+            * Please Enter Username
+        </ion-text>
+      </ion-text>
+      </div>
+
+       <!--for email  w/ validator-->
+      <div class="ion-margin-vertical">
+        <ion-item>
+          
+          <ion-icon name="mail" slot="start"></ion-icon>
+        <ion-input formControlName="email" type="email" placeholder="Email"></ion-input>
+        </ion-item>
+        <ion-text class="error" color="danger"  *ngIf="!form.get('email').valid && form.get('email').touched">
+          <ion-text *ngIf="form.get('email').hasError('required')">
+            * Please Enter your Email Address
+        </ion-text>
+        <ion-text  *ngIf="!form.get('email').hasError('required') && form.get('email').hasError('email')">
+          * Please Enter proper Email Address
+        </ion-text>
+      </ion-text>
+      </div>
+  
+      <!--for password w/ validator-->
+      <div class="ion-margin-vertical">
+        <ion-item>
+          
+          <ion-icon name="key" slot="start"></ion-icon>
+        <ion-input formControlName="password" type="password" placeholder="Password"></ion-input>
+        </ion-item>
+        <ion-text class="error" color="danger"  *ngIf="!form.get('password').valid && form.get('password').touched">
+          <ion-text *ngIf="form.get('password').hasError('required')">
+            * Please Enter your Password 
+        </ion-text>
+        <ion-text *ngIf="!form.get('password').hasError('required') && form.get('password').hasError('password')">
+          * Please must be of atleast 8 characters
+        </ion-text>
+      </ion-text>
+      </div>
+
+  
+      <ion-button routerLink="/welcome" class="ion-margin-vertical signBtn" size="large" expand="block" shape="round" (click)="onSubmit()">
+        <ion-text>Sign Up</ion-text>
+      </ion-button>
+    </form>
+  </ion-item-group>
+  
+ 
+  
+  </ion-list>
+  </ion-footer>
